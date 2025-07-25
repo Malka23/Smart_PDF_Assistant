@@ -1,7 +1,7 @@
 # Smart_PDF_Assistant
 # 📄 Smart PDF Q&A Assistant
 
-A GenAI-powered application that allows users to upload a PDF and ask questions based on its content using **RAG (Retrieval-Augmented Generation)** with **Hugging Face models**.
+The Smart PDF Assistant is an AI-powered tool that allows users to upload PDF documents and ask questions about their content. Built using Retrieval-Augmented Generation (RAG) and LLMs, this assistant extracts, indexes, and answers user queries from PDFs with high accuracy and context awareness.
 
 ---
 
@@ -16,13 +16,22 @@ A GenAI-powered application that allows users to upload a PDF and ask questions 
 
 ---
 
-## 📦 Folder Structure
+## 🧰 Tech Stack
+- Frontend: Streamlit
 
-Smart_PDF_Assistant/
-│
-├── app.py # Streamlit app
-├── rag_utils.py # PDF processing, embedding & QA logic
-├── requirements.txt # Python dependencies
+- Backend: Python
+
+- Core Libraries:
+
+- PyPDF2 or pdfplumber – PDF text extraction
+
+- langchain – RAG pipeline (chunking, embeddings, retrieval)
+
+- faiss – Vector similarity search
+
+- transformers / OpenAI – LLMs for answer generation
+
+- streamlit – Web UI
 
 ## 🧠 How It Works
 Extracts text from the uploaded PDF.
@@ -35,13 +44,12 @@ Retrieves relevant chunks based on the user question.
 
 Generates an answer using a Hugging Face LLM.
 
-## 📚 Models & Tools Used
-🔗 Hugging Face Transformers
+## 🤝 Contributing
+We welcome contributions and suggestions! Please fork the repo, make your changes, and submit a pull request.
 
-🧠 LangChain
-
-🧩 Sentence Transformers
-
-📄 PyMuPDF / fitz
-
-🖥️ Streamlit
+## 🚀 How to Run Locally
+1. Clone the repository
+2. Create a virtual environment
+3. Install dependencies
+4. Set up your .env file
+5. Run the app
